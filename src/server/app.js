@@ -15,10 +15,6 @@ function pageBuilder(page) {
       this.replace("<!-- ::HEADER:: -->", Header.component());
       return this;
     },
-    // addCommentForm() {
-    //   this.replace('<!-- ::COMMENT_FORM:: -->', CommentForm.component());
-    //   return this;
-    // },
     // addCommentList(state) {
     //   const comments = state.map(c => Comment.component(c, c.id)).join('');
     //   this.replace('<!-- ::COMMENT_LIST:: -->', CommentList.component(comments));
@@ -34,7 +30,6 @@ app.get("/", (req, res) => {
   //res.set("Cache-Control", "s-maxage=1200, max-age=600");
   const page = pageBuilder(indexHtml)
     .addHeader()
-    // .addCommentForm()
     // .addCommentList(state)
     .build();
   res.send(page);
