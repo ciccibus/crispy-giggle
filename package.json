@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:client && npm run build:server && npm run build:components && npm run babel:components",
     "build:server": "cpx src/server/**/* functions",
-    "build:client": "cpx src/client/**/* public",
+    "build:client": "npm run build:styles && npm run build:scripts",
+    "build:styles": "postcss src/client/css/main.css -o public/css/main.css -m",
+    "build:scripts": "cpx src/client/js/**/* public/js",
     "build:components": "cpx src/components/**/* public/components",
     "babel:components": "babel src/components -d functions/components",
     "serve": "firebase serve --only functions,hosting",
@@ -26,6 +28,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "cpx": "^1.5.0"
+    "cpx": "^1.5.0",
+    "postcss-cli": "^6.0.0",
+    "postcss-preset-env": "^5.2.3"
   }
 }
