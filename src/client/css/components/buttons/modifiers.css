@@ -1,0 +1,9 @@
+.cg-button--primary {
+  background-color: var(--primary-color-500);
+  color: var(--primary-color-50);
+}
+
+.cg-button--outlined {
+  border: 2px solid var(--primary-color-500);
+  color: var(--primary-color-500);
+}

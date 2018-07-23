@@ -1,0 +1,13 @@
+.cg-button {
+  font-size: var(--font-size-small);
+  padding: 0 15px;
+  line-height: 1;
+  color: var(--primary-color-500);
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  margin-top: 10px;
+  border-radius: 2px;
+  height: 44px;
+  min-width: 64px;
+}

@@ -1,0 +1,35 @@
+:root {
+  --primary-color-50: #e0f2f1;
+  --primary-color-100: #b2dfdb;
+  --primary-color-200: #80cbc4;
+  --primary-color-300: #4db6ac;
+  --primary-color-400: #26a69a;
+  --primary-color-500: #009688;
+  --primary-color-600: #00897b;
+  --primary-color-700: #00796b;
+  --primary-color-800: #00695c;
+  --primary-color-900: #004d40;
+  --primary-color-A100: #a7ffeb;
+  --primary-color-A200: #64ffda;
+  --primary-color-A400: #1de9b6;
+  --primary-color-A700: #00bfa5;
+  --font-size-regular: 1.7rem;
+  --font-size-small: 1.4rem;
+  --font-size-big: 2rem;
+  --primary-font: "Gaegu", cursive;
+  --primary-font-1: "Ubuntu", sans-serif;
+  --primary-font-2: "Quicksand", sans-serif;
+  --primary-font-3: "Varela Round", sans-serif;
+  --primary-font-4: "Shadows Into Light", cursive;
+  --primary-font-5: "Nunito Sans", sans-serif;
+  --primary-font-6: "Knewave", cursive;
+  --primary-font-7: "Amatic SC", cursive;
+  --primary-font-8: "Comfortaa", cursive;
+  --primary-font-9: "Poiret One", cursive;
+  --primary-font-10: "Farsan", cursive;
+  --primary-font-11: "Satisfy", cursive;
+  --primary-font-12: "Courgette", cursive;
+  --primary-font-13: "Caveat", cursive;
+  --primary-font-14: "Basic", sans-serif;
+  --primary-font-15: "Unica One", cursive;
+}

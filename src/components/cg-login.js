@@ -3,9 +3,9 @@ import { CGElement } from "./cg-element.js";
 const html = String.raw;
 
 export class Login extends CGElement {
-  static template() {
+  static template(classes) {
     return html`
-        <form>
+        <form class="font-type-${classes}">
             <div class="username">
                 <input type="text" class="" id="username-input" name="username" required>
                 <label class="" for="username-input">Username</label>
@@ -15,20 +15,23 @@ export class Login extends CGElement {
                 <label class="" for="password-input">Password</label>
             </div>
             <div class="button-container">
-                <button class="" type="button">
+                <button class="cg-button" type="button">
                     Cancel
                 </button>
-                <button class="">
+                <button class="cg-button cg-button--primary">
+                    Next
+                </button>
+                <button class="cg-button cg-button--outlined">
                     Next
                 </button>
             </div>
         </form>
     `;
   }
-  static component() {
+  static component(classes) {
     return html`
     <cg-login>
-      ${this.template()}
+      ${this.template(classes)}
     </cg-login>
     `;
   }
