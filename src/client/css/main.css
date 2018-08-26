@@ -1,68 +1,7 @@
 @import "./settings";
 @import "./base";
+@import "./utils";
+@import "./components/input/base";
+@import "./components/input/modifiers";
 @import "./components/buttons/base";
 @import "./components/buttons/modifiers";
-
-.font-type-1 {
-  font-family: var(--primary-font);
-}
-
-.font-type-2 {
-  font-family: var(--primary-font-1);
-}
-
-.font-type-3 {
-  font-family: var(--primary-font-2);
-}
-
-.font-type-4 {
-  font-family: var(--primary-font-3);
-}
-
-.font-type-5 {
-  font-family: var(--primary-font-4);
-}
-
-.font-type-6 {
-  font-family: var(--primary-font-5);
-}
-
-.font-type-7 {
-  font-family: var(--primary-font-6);
-}
-
-.font-type-8 {
-  font-family: var(--primary-font-7);
-}
-
-.font-type-9 {
-  font-family: var(--primary-font-8);
-}
-
-.font-type-10 {
-  font-family: var(--primary-font-9);
-}
-
-.font-type-11 {
-  font-family: var(--primary-font-10);
-}
-
-.font-type-12 {
-  font-family: var(--primary-font-11);
-}
-
-.font-type-13 {
-  font-family: var(--primary-font-12);
-}
-
-.font-type-14 {
-  font-family: var(--primary-font-13);
-}
-
-.font-type-15 {
-  font-family: var(--primary-font-14);
-}
-
-.font-type-16 {
-  font-family: var(--primary-font-15);
-}

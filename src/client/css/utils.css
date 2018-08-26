@@ -1,0 +1,31 @@
+.u-upper-case {
+  text-transform: uppercase;
+}
+
+.u-strong {
+  font-weight: 700;
+}
+
+.u-container {
+  margin: 20px auto;
+  max-width: 1280px;
+  padding: 20px;
+}
+
+.u-container--small {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.u-primary-font {
+  font-family: "Quicksand", sans-serif;
+}
+
+.u-secondary-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.u-block {
+  display: block;
+}

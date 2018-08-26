@@ -1,0 +1,7 @@
+.cg-input__element {
+  font-size: var(--font-size-small);
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--primary-color-500);
+}

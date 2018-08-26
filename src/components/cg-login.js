@@ -3,35 +3,37 @@ import { CGElement } from "./cg-element.js";
 const html = String.raw;
 
 export class Login extends CGElement {
-  static template(classes) {
+  static template() {
     return html`
-        <form class="font-type-${classes}">
-            <div class="username">
-                <input type="text" class="" id="username-input" name="username" required>
-                <label class="" for="username-input">Username</label>
-            </div>
-            <div class="password">
-                <input type="password" class="" id="password-input" name="password" required minlength="8">
-                <label class="" for="password-input">Password</label>
-            </div>
-            <div class="button-container">
-                <button class="cg-button" type="button">
-                    Cancel
-                </button>
-                <button class="cg-button cg-button--primary">
-                    Next
-                </button>
-                <button class="cg-button cg-button--outlined">
-                    Next
-                </button>
+        <form class="u-primary-font">
+            <div class="u-container--small">
+                <div class="username">
+                    <label class="cg-input__label u-upper-case u-block" for="username-input">Username</label>
+                    <input type="text" class="cg-input__element u-block" id="username-input" name="username" required>
+                </div>
+                <div class="password">
+                    <label class="cg-input__label u-upper-case u-block" for="password-input">Password</label>
+                    <input type="password" class="cg-input__element u-block" id="password-input" name="password" required minlength="8">
+                </div>
+                <div class="button-container">
+                    <button class="cg-button u-upper-case" type="button">
+                        Cancel
+                    </button>
+                    <button class="cg-button cg-button--primary u-upper-case">
+                        Next
+                    </button>
+                    <button class="cg-button cg-button--outlined u-upper-case">
+                        Next
+                    </button>
+                </div>
             </div>
         </form>
     `;
   }
-  static component(classes) {
+  static component() {
     return html`
     <cg-login>
-      ${this.template(classes)}
+      ${this.template()}
     </cg-login>
     `;
   }

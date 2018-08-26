@@ -19,10 +19,7 @@ function pageBuilder(page) {
       return this;
     },
     addLogin() {
-      const html = [3, 9, 10].map(item => {
-        return Login.component(item);
-      });
-      this.replace("<!-- ::LOGIN:: -->", html.join(""));
+      this.replace("<!-- ::LOGIN:: -->", Login.component());
       return this;
     },
     // addCommentList(state) {

@@ -6,7 +6,9 @@ export class Header extends CGElement {
   static template() {
     return html`
     <header class="">
-        <h1>Crispy Giggle</h1>
+        <div class="u-container">
+          <h1 class="u-secondary-font u-strong">Crispy Giggle</h1>
+        </div>
     </header>
     `;
   }
