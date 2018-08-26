@@ -36,6 +36,7 @@ jobs:
         
       # run tests!
       - run: npm test
+      - run: npm run build
       - run: cd functions && npm install
       - run:
           name: Deploy Master to Firebase
