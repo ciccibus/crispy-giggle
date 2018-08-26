@@ -60,6 +60,9 @@ typings/
 # next.js build output
 .next
 
-functions
+functions/components
+functions/index.html
+functions/index.js
+functions/app.js
 public
 build
