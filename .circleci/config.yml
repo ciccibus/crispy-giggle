@@ -35,7 +35,6 @@ jobs:
         
       # run tests!
       - run: npm test
-      - run: cd functions && npm install
       - run:
           name: Deploy Master to Firebase
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
